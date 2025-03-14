@@ -24,6 +24,18 @@ const gameCategories = {
         { name: "Cannon Balls 3D", image: "/images/game/CannonBalls3d.jpg", game: "/games/canonBalls.html" },
         { name: "Truck", image: "/images/game/Truck.jpg", game: "/games/endlessTruck.html" },
         { name: "Truck Trials", image: "/images/game/TruckTrials.jpg", game: "/games/trucksTrial.html" }
+    ],
+    "fifthRow": [
+        { name: "Ludo king", image: "/images/game/ludo.jpg", game: "/games/ludo.html" },
+        { name: "Color Sort", image: "/images/game/colorSort.jpg", game: "/games/colorSort.html" },
+        { name: "Train winner", image: "/images/game/train.avif", game: "/games/trainWinner.html" },
+        { name: "Car Race", image: "/images/game/carRace.avif", game: "/games/carRace.html" },
+    ],
+    "sixthRow": [
+        { name: "Giant rush", image: "/images/game/giantRush.png", game: "/games/giantRush.html" },
+        { name: "Snipper shot", image: "/images/game/snipper.png", game: "/games/snipperShot.html" },
+        { name: "Cut the rope", image: "/images/game/cutTheRope.jpeg", game: "/games/cutRope.html" },
+        { name: "Food rush", image: "/images/game/foodRush.webp", game: "/games/foodRush.html" },
     ]
 };
 
