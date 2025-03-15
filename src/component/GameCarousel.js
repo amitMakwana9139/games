@@ -1,41 +1,45 @@
 import Image from "next/image";
 
 const gameCategories = {
-    "Puzzle": [
-        { name: "Bubble", image: "/images/game/bubble.jpg", game: "/games/bubble.html" },
-        { name: "Element Blocks", image: "/images/game/ElementBlocks.jpg", game: "/games/elmentBlock.html" },
-        { name: "One Connect Classic", image: "/images/game/OnetConnectClassicTeaser.jpg", game: "/games/classic.html" },
-        { name: "Sort It Teaser", image: "/images/game/SortItTeaser.jpg", game: "/games/sortit.html" }
-    ],
-    "Racing": [
-        { name: "Speed Boat", image: "/images/game/count.avif", game: "/games/speedBoat.html" },
-        { name: "Moto", image: "/images/game/Moto.jpg", game: "/games/motox3.html" },
-        { name: "Sprint Club Nitro", image: "/images/game/SprintClubNitro.jpg", game: "/games/sprintClubNitro.html" },
-        { name: "Uphill Racing", image: "/images/game/uphilracing.jpeg", game: "/games/uphillRacing.html" }
-    ],
-    "Action": [
-        { name: "Stickman", image: "/images/game/stickman.avif", game: "/games/stickman.html" },
-        { name: "Om Nom Run", image: "/images/game/OmNomRun.jpg", game: "/games/omnomrun.html" },
-        { name: "Jumpcat", image: "/images/game/jumpcat.webp", game: "/games/jumpcat.html" },
-        { name: "Totemia", image: "/images/game/Totemi.jpg", game: "/games/totemia.html" }
-    ],
-    "Arcade": [
-        { name: "Bubble Tower 3D", image: "/images/game/BubbleTower3dTeaser.jpg", game: "/games/bubbleTower.html" },
-        { name: "Cannon Balls 3D", image: "/images/game/CannonBalls3d.jpg", game: "/games/canonBalls.html" },
-        { name: "Truck", image: "/images/game/Truck.jpg", game: "/games/endlessTruck.html" },
-        { name: "Truck Trials", image: "/images/game/TruckTrials.jpg", game: "/games/trucksTrial.html" }
-    ],
     "fifthRow": [
         { name: "Ludo king", image: "/images/game/ludo.jpg", game: "/games/ludo.html" },
-        { name: "Color Sort", image: "/images/game/colorSort.jpg", game: "/games/colorSort.html" },
         { name: "Train winner", image: "/images/game/train.avif", game: "/games/trainWinner.html" },
         { name: "Car Race", image: "/images/game/carRace.avif", game: "/games/carRace.html" },
+        { name: "Color Sort", image: "/images/game/colorSort.jpg", game: "/games/colorSort.html" },
     ],
     "sixthRow": [
         { name: "Giant rush", image: "/images/game/giantRush.png", game: "/games/giantRush.html" },
         { name: "Snipper shot", image: "/images/game/snipper.png", game: "/games/snipperShot.html" },
         { name: "Cut the rope", image: "/images/game/cutTheRope.jpeg", game: "/games/cutRope.html" },
         { name: "Food rush", image: "/images/game/foodRush.webp", game: "/games/foodRush.html" },
+    ],
+    "Racing": [
+        { name: "Moto", image: "/images/game/Moto.jpg", game: "/games/motox3.html" },
+        { name: "Speed Boat", image: "/images/game/count.avif", game: "/games/speedBoat.html" },
+        { name: "Sprint Club Nitro", image: "/images/game/SprintClubNitro.jpg", game: "/games/sprintClubNitro.html" },
+        { name: "Uphill Racing", image: "/images/game/uphilracing.jpg", game: "/games/uphillRacing.html" }
+    ],
+    "Action": [
+        { name: "Stickman", image: "/images/game/stickman.avif", game: "/games/stickman.html" },
+        { name: "Jumpcat", image: "/images/game/jumpcat.webp", game: "/games/jumpcat.html" },
+        { name: "Totemia", image: "/images/game/Totemi.jpg", game: "/games/totemia.html" },
+        { name: "Om Nom Run", image: "/images/game/om-nom-run.png", game: "/games/omnomrun.html" },
+    ],
+    "Arcade": [
+        { name: "Bubble Tower 3D", image: "/images/game/BubbleTower3dTeaser.jpg", game: "/games/bubbleTower.html" },
+        { name: "Truck", image: "/images/game/Truck.jpg", game: "/games/endlessTruck.html" },
+        { name: "Truck Trials", image: "/images/game/TruckTrials.jpg", game: "/games/trucksTrial.html" },
+        { name: "Cannon Balls 3D", image: "/images/game/CannonBalls3d.jpg", game: "/games/canonBalls.html" },
+    ],
+    "Puzzle": [
+        { name: "Bubble", image: "/images/game/bubble.jpg", game: "/games/bubble.html" },
+        { name: "Element Blocks", image: "/images/game/ElementBlocks.jpg", game: "/games/elmentBlock.html" },
+        { name: "One Connect Classic", image: "/images/game/OnetConnectClassicTeaser.jpg", game: "/games/classic.html" },
+        { name: "Sort It Teaser", image: "/images/game/SortItTeaser.jpg", game: "/games/sortit.html" }
+    ],
+    "sevenRow": [
+        { name: "Mining", image: "/images/game/idle-mining-empire.png", game: "/games/mining.html" },
+        { name: "Cube Match", image: "/images/game/cubeMatch.png", game: "/games/cubeMatch.html" },
     ]
 };
 
@@ -47,8 +51,8 @@ export default function GameCarousel() {
             </h2>
             {Object.entries(gameCategories).map(([category, games]) => (
                 <div key={category} className="mb-8">
-                    {/* <h3 className="text-2xl font-semibold mb-4 text-center text-white">{category}</h3> */}
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 2xl:grid-cols-8 gap-5">
+                    {/* <h3 className="text-2xl font-semibold mb-4 text-center text-white">{category}</h3> 2xl:grid-cols-8*/}
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6  gap-5">
                         {games.map((game, index) => (
                             <a
                                 key={index}
