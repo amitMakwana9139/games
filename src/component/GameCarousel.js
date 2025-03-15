@@ -48,6 +48,12 @@ const gameCategories = {
         { name: "Tower smash", image: "/images/game/towerSmash.png", game: "/games/towerSmash.html" },
         { name: "Peet sneak", image: "/images/game/peetLock.webp", game: "/games/peatSneek.html" },
         { name: "Pizza", image: "/images/game/pizzaPairUp.png", game: "/games/pizza.html" },
+    ],
+    "nineRow": [
+        { name: "Slime road", image: "/images/game/slimeRoad.png", game: "/games/slimeRoad.html" },
+        { name: "knife", image: "/images/game/knife.png", game: "/games/knife.html" },
+        { name: "Fruit Cut", image: "/images/game/fruitCut.png", game: "/games/fruitCut.html" },
+        // { name: "Pizza", image: "/images/game/pizzaPairUp.png", game: "/games/pizza.html" },
     ]
 };
 
