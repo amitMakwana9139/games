@@ -40,6 +40,14 @@ const gameCategories = {
     "sevenRow": [
         { name: "Mining", image: "/images/game/idle-mining-empire.png", game: "/games/mining.html" },
         { name: "Cube Match", image: "/images/game/cubeMatch.png", game: "/games/cubeMatch.html" },
+        { name: "Thief puzzle", image: "/images/game/thiefPuzzle.png", game: "/games/thiefPuzzle.html" },
+        { name: "TowerFall html", image: "/images/game/towerFall.jpg", game: "/games/towerFall.html" },
+    ],
+    "eightRow": [
+        { name: "Pipe puzzle", image: "/images/game/pipePuzzle.png", game: "/games/pipePuzzle.html" },
+        { name: "Tower smash", image: "/images/game/towerSmash.png", game: "/games/towerSmash.html" },
+        { name: "Peet sneak", image: "/images/game/peetLock.webp", game: "/games/peatSneek.html" },
+        { name: "Pizza", image: "/images/game/pizzaPairUp.png", game: "/games/pizza.html" },
     ]
 };
 
